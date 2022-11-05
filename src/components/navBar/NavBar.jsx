@@ -1,4 +1,4 @@
-import React from 'react';
+import './navBar.scss';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
@@ -19,7 +19,7 @@ const NavBar = () => {
 				<HomeOutlinedIcon />
 				<DarkModeOutlinedIcon />
 				<GridViewOutlinedIcon />
-				<div className="search1">
+				<div className="search">
 					<SearchOutlinedIcon />
 					<input type="text" placeholder="Search" />
 				</div>
@@ -29,7 +29,10 @@ const NavBar = () => {
 				<EmailOutlinedIcon />
 				<NotificationsOutlinedIcon />
 				<div className="user">
-					<img src="" alt="" />
+					<img
+						src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+						alt=""
+					/>
 					<span>John Doe</span>
 				</div>
 			</div>
