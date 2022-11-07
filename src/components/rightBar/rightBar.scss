@@ -1,4 +1,8 @@
+@import "../../style.scss";
+
+
 .rightbar{
+    @include themify($themes){
     flex: 4;
     position: -webkit-sticky;
     position: sticky;
@@ -8,6 +12,7 @@
     &::-webkit-scrollbar{
         display: none;
     }
+    background-color: themed("bgSoft");
 
     .container{
         padding: 20px;
@@ -18,8 +23,10 @@
             padding: 20px;
 
             margin-bottom: 10px;
+    background-color: themed("bg");
+
             span{
-                color: gray;
+                color: themed("textColorSoft");
             }
 
             .user{
@@ -51,12 +58,14 @@
                     }
 
                     p{
-                        color: gray;
+                        color: themed("textColorSoft");
+
                     }
 
                     span{
                         font-weight: 500;
-                        color: black;
+                        color: themed("textColor");
+
                     }
                 }
 
@@ -82,4 +91,5 @@
             }
         }
     }
+}
 }
